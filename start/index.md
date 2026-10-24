@@ -40,11 +40,16 @@ AI にこう頼みます。
 
 ブラウザが開かないときは、https://github.com/login/device を自分で開いて、同じコードを入れてください。
 
-### 2-3. この1文を送る
+### 2-3. この文を送る
 
-Claude Code（推奨）でも Codex でも、やることは同じです。
+Claude Code（推奨）でも Codex でも、やることは同じです。次の文をそのままコピーして送ってください。
 
-> https://github.com/code-motion-graphics/code-motion-graphics の INSTALL.md を読んで、CODE MOTION GRAPHICS を導入して、試しに短い動画を1本作って
+> https://github.com/code-motion-graphics/code-motion-graphics の INSTALL.md を読んで、CODE MOTION GRAPHICS を導入して、試しに短い動画を1本作って。<br>
+> 始める前に、次の2つを確かめて。<br>
+> ・あなたがクラウドで動いていて、私のパソコンのフォルダで作業できないなら、作業を始めずに、どのアプリのどの画面で頼み直せばいいかを私に教えて。<br>
+> ・GitHubにログインしていない、またはリポジトリが開けない（404）なら、GitHubにログインしてよいか私に聞いて。OKなら gh auth login --web で、私がブラウザで許可する形でログインして。パスワードは私が自分で入れる。
+
+AI がクラウドで動いていたり、GitHub にログインしていなかったりすると、AI のほうから聞いてきます。2-1・2-2 のとおりに答えてください。
 
 AI が、Node.js・Python・FFmpeg・HyperFrames の確認と導入、スキルの接続、フォントの取得、試しの1本までを進めます。
 
