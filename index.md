@@ -17,6 +17,10 @@ title: はじめに
 {% for u in site.data.updates limit:5 %}<div class="log"><span class="meta">{{ u.date }}</span><span class="tag">{% if u.kind == "skill" %}スキル{% else %}マニュアル{% endif %}</span> <b>{{ u.title }}</b><br>{{ u.summary }}</div>
 {% endfor %}
 
+## 解決しないときは
+
+このマニュアルで解決しないときは、[質問・不具合報告フォーム](https://forms.gle/JmEkdLW5hhzd6hik8)からお送りください。回答は、個人が分からない形でこのマニュアルに掲載します（通常は翌朝まで）。マニュアルの更新は「購入者通信」でもお知らせします。
+
 ## このスキルとの付き合い方
 
 あなたが監督・ディレクターで、スキルは動画クリエイターです。AI にお任せでも動画は完成しますが、0.1秒のこだわりや世界観は、監督の頼み方で変わります。動画生成AIと違って何度でも安く作り直せるので、数を回して試してください。
