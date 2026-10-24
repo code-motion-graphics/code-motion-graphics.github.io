@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }}｜{% endif %}CODE MOTION GRAPHICS マニュアル</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="{{ '/' | relative_url }}"><span class="logo">CMG</span><span>CODE MOTION GRAPHICS<small>購入者マニュアル</small></span></a>
+  <nav>
+    <a href="{{ '/start/' | relative_url }}">受け取り・導入</a>
+    <a href="{{ '/faq/' | relative_url }}">よくある質問</a>
+    <a href="{{ '/fixes/' | relative_url }}">不具合と対応</a>
+    <a href="{{ '/updates/' | relative_url }}">更新履歴</a>
+  </nav>
+</header>
+<main class="wrap">
+{{ content }}
+</main>
+<footer class="foot">
+  <p>ご質問・不具合のご報告は、Brain の有料エリアにあるフォームからお送りください。いただいた内容は、個人が分からない形でこのマニュアルに反映します。</p>
+  <p class="small">最終更新：{{ site.data.updates[0].date | default: site.time | date: "%Y-%m-%d" }}</p>
+</footer>
+</body>
+</html>

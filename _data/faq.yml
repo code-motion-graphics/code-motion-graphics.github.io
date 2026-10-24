@@ -1,0 +1,67 @@
+# よくある質問。新しいものを上に足す。a は Markdown。source：brain（Brainの記載）／form（購入者の質問から）
+- id: faq-black-render
+  category: 書き出し
+  q: 書き出した動画が真っ黒になる
+  a: |
+    ほとんどは、どこかのファイルの書き間違いか、ロゴ画像の置き忘れです。
+    AI に「真っ黒になった、原因を調べて」と言えば、調べる道具（`hfdbg.cjs`）が入っているので自分で直します。
+  added: 2026-10-24
+  source: brain
+- id: faq-render-slow
+  category: 書き出し
+  q: 書き出しが重い・止まる
+  a: |
+    ノートパソコンは電源につないでください。
+    それでも遅いときは、書き出し用のブラウザが GPU を使えていないことが多いです。AI に「hyperframes doctor で確かめて」と言ってください。
+  added: 2026-10-24
+  source: brain
+- id: faq-tofu
+  category: 文字・フォント
+  q: 文字が四角（豆腐）になる・フォントが出ない
+  a: |
+    フォントの読み込みが終わる前に描いているか、フォントを取ってきていません。
+    AI に「フォントが出ない」と伝えれば直します。初回だけ `python <スキル>/fonts/fetch.py` でフォントを取得します（約180MB）。
+  added: 2026-10-24
+  source: brain
+- id: faq-sfx-offset
+  category: 音
+  q: 効果音がずれる
+  a: |
+    曲の頭の無音や、効果音のファイルの頭の無音でずれることがあります。
+    「効果音を打撃の秒に合わせ直して」と言えば、AI が音を測り直して置き直します。
+  added: 2026-10-24
+  source: brain
+- id: faq-commercial
+  category: 利用条件
+  q: 作った動画は商用で使える？
+  a: |
+    使えます。広告・販売・クライアントへの納品にも使えます。
+    ただし、動画に入れた曲・効果音・画像は、それぞれの利用条件に従ってください。フォントは動画に使う分には問題ありません。
+  added: 2026-10-24
+  source: brain
+- id: faq-redistribute
+  category: 利用条件
+  q: スキルそのものを人に渡したり、売ったりしていい？
+  a: それはできません。中身の再配布・転売・公開はしないでください。
+  added: 2026-10-24
+  source: brain
+- id: faq-mac
+  category: 導入
+  q: Mac でも使える？
+  a: 使えます。導入の手順も Mac 用に書いてあります。Blender モードだけは時間がかかります。
+  added: 2026-10-24
+  source: brain
+- id: faq-codex
+  category: 導入
+  q: Codex でも同じものが作れる？
+  a: 作れます。中身は同じスキルです。作り込んだのは Claude Code なので、迷ったら Claude Code がおすすめです。
+  added: 2026-10-24
+  source: brain
+- id: faq-update
+  category: 更新
+  q: 最新版にするには？
+  a: |
+    AI に「CODE MOTION GRAPHICS を更新して」と言うだけです（中で `git pull` します）。
+    何が変わったかは、スキルの中の `CHANGELOG.md` と、このマニュアルの[更新履歴](../updates/)に書いています。
+  added: 2026-10-24
+  source: brain

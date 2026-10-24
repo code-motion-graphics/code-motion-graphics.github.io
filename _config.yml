@@ -1,0 +1,10 @@
+title: CODE MOTION GRAPHICS マニュアル
+lang: ja
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+defaults:
+  - scope: { path: "" }
+    values: { layout: default }
+exclude: [README.md, scripts, tools]
